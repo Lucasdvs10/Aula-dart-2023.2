@@ -41,7 +41,25 @@ void exercicio2(){
 //   print (contador);
 // }
 void main(List <String> arguments){
-  exercicio2();
+  var paisesPortugues = {'Brasil', 'Portugal'};
+  var paisesEuropa = {'Alemanha', 'Espanha', 'Portugal'};
+
+  var todosPaises = paisesPortugues.union(paisesEuropa);
+  var paisesEuropeusQueFalamPort = paisesEuropa.intersection(paisesPortugues);
+  var falaPortuguesENaoSaoEuro = paisesPortugues.difference(paisesEuropa);
+  var todosMenosPortugal = todosPaises.difference(paisesEuropeusQueFalamPort);
+
+  print("1 - $todosPaises");
+  print("2 - $paisesEuropeusQueFalamPort");
+  print("3 - $falaPortuguesENaoSaoEuro");
+  print("4 - $todosMenosPortugal");
+
+
+  
+  
+  
+
+  // exercicio2();
   //type annotation
   // var somenteStrings = <String> [];
   // print(somenteStrings);
